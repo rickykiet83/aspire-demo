@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{DA9685D7-1C5F-40EE-A6A1-F7129EE2D757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{7A4D8966-12FF-43BB-A06B-D01AC7050741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend\Frontend.csproj", "{896C28CE-017A-44BA-96F4-C20B13573E16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2D780BE-8343-4FC6-9577-094F0C10AD88}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA9685D7-1C5F-40EE-A6A1-F7129EE2D757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9685D7-1C5F-40EE-A6A1-F7129EE2D757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9685D7-1C5F-40EE-A6A1-F7129EE2D757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9685D7-1C5F-40EE-A6A1-F7129EE2D757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4D8966-12FF-43BB-A06B-D01AC7050741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4D8966-12FF-43BB-A06B-D01AC7050741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4D8966-12FF-43BB-A06B-D01AC7050741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4D8966-12FF-43BB-A06B-D01AC7050741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896C28CE-017A-44BA-96F4-C20B13573E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896C28CE-017A-44BA-96F4-C20B13573E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896C28CE-017A-44BA-96F4-C20B13573E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896C28CE-017A-44BA-96F4-C20B13573E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
