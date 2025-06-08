@@ -25,6 +25,18 @@
           </ExecutableSnapshot>
         </option>
       </ExecutableRowSnapshot>
+      <ExecutableRowSnapshot>
+        <option name="condition">
+          <ConditionSnapshot>
+            <option name="type" value="immediately" />
+          </ConditionSnapshot>
+        </option>
+        <option name="executable">
+          <ExecutableSnapshot>
+            <option name="id" value="runConfig:Aspire Host.AppHost: https" />
+          </ExecutableSnapshot>
+        </option>
+      </ExecutableRowSnapshot>
     </rows>
     <method v="2" />
   </configuration>
