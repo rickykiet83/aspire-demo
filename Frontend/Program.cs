@@ -7,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.AddServiceDefaults();
+
+// builder.Services.AddHttpClient<BackendHttpClient>(x => x.BaseAddress = new Uri("https+http://api"));
 var apiBaseAddress = builder.Configuration.GetValue<string>("ApiBaseAddress");
 builder.Services.AddHttpClient<BackendHttpClient>(x => x.BaseAddress = new Uri(apiBaseAddress!));
 
@@ -27,5 +30,7 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+app.MapDefaultEndpoints();
 
 app.Run();

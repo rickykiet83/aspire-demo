@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+
 builder.Services.AddCors();
 
 var connectionString =
@@ -14,7 +16,10 @@ builder.Services.AddDbContext<PodcastDbContext>(options =>
 
 var app = builder.Build();
 
+app.MapDefaultEndpoints();
+
 app.UseCors(x => x.AllowAnyOrigin());
+
 
 app.MapGet("/podcasts", async (PodcastDbContext db) => await db.Podcasts
     .OrderBy(x => x.Title)
