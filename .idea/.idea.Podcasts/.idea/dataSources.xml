@@ -41,5 +41,19 @@
       <jdbc-url>Server=127.0.0.1,58137;User ID=sa;Password=Password#123;TrustServerCertificate=true;Initial Catalog=podcasts</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="podcasts" uuid="61123460-2445-412a-867f-79c4c58e5d92">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=127.0.0.1,53471;User ID=sa;Password=Password#123;TrustServerCertificate=true;Initial Catalog=podcasts</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="podcasts" uuid="89d6bcd1-6ae4-4956-b79b-6086cf5a26d1">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=127.0.0.1,53796;User ID=sa;Password=Password#123;TrustServerCertificate=true;Initial Catalog=podcasts</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

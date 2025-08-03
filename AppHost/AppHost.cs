@@ -2,9 +2,23 @@ using Projects;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
+///////////////////////////
+// Some extra integrations, just for fun...
+
+var redis = builder.AddRedis("cache")
+    .WithRedisCommander();
+
+var rabbitmq = builder.AddRabbitMQ("rabbitmq")
+    .WithManagementPlugin();
+
+var mongoDb = builder.AddMongoDB("mongodb")
+    .WithMongoExpress();
+
+///////////////////////////
+
 var password = builder.AddParameter("password", secret: true);
 
-var server = builder.AddSqlServer("server", password, 1433)
+var server = builder.AddSqlServer("SQLServer", password, 1433)
     .WithLifetime(ContainerLifetime.Persistent);
 
 var db = server

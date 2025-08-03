@@ -29,7 +29,12 @@ docker compose -f docker-compose.yaml -p podcasts-aspire up -d --build
 ```
 This command will build the Docker image and automatically seed the database with sample data. 
 
-Start the application and access it via the following URLs:
+Start the application (AppHost project) and access it via the following URLs:
 - Aspire dashboard: `https://localhost:15011` or `http://localhost:15299`
 - Podcasts API: `https://localhost:7092` or `http://localhost:5142`
 - Podcasts UI: `https://localhost:7032` or `http://localhost:5115`
+
+## Other Integrations (just for reference)
+- RabbitMQ: The course includes RabbitMQ integration for message queuing.
+- Redis: Redis is used for caching and session management.
+- MongoDB: MongoDB is used for NoSQL data storage.
