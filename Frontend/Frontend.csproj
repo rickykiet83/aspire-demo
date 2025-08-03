@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="bootstrap" Version="5.3.6" />
+      <PackageReference Include="bootstrap" Version="5.3.7" />
     </ItemGroup>
 
     <ItemGroup>

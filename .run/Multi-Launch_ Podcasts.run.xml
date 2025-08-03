@@ -9,6 +9,30 @@
         </option>
         <option name="executable">
           <ExecutableSnapshot>
+            <option name="id" value="runConfig:Aspire Host.AppHost: https" />
+          </ExecutableSnapshot>
+        </option>
+      </ExecutableRowSnapshot>
+      <ExecutableRowSnapshot>
+        <option name="condition">
+          <ConditionSnapshot>
+            <option name="type" value="immediately" />
+          </ConditionSnapshot>
+        </option>
+        <option name="executable">
+          <ExecutableSnapshot>
+            <option name="id" value="runConfig:.NET Project.MigrationService" />
+          </ExecutableSnapshot>
+        </option>
+      </ExecutableRowSnapshot>
+      <ExecutableRowSnapshot>
+        <option name="condition">
+          <ConditionSnapshot>
+            <option name="type" value="immediately" />
+          </ConditionSnapshot>
+        </option>
+        <option name="executable">
+          <ExecutableSnapshot>
             <option name="id" value="runConfig:.NET Launch Settings Profile.Api: https" />
           </ExecutableSnapshot>
         </option>
@@ -22,18 +46,6 @@
         <option name="executable">
           <ExecutableSnapshot>
             <option name="id" value="runConfig:.NET Launch Settings Profile.Frontend: https" />
-          </ExecutableSnapshot>
-        </option>
-      </ExecutableRowSnapshot>
-      <ExecutableRowSnapshot>
-        <option name="condition">
-          <ConditionSnapshot>
-            <option name="type" value="immediately" />
-          </ConditionSnapshot>
-        </option>
-        <option name="executable">
-          <ExecutableSnapshot>
-            <option name="id" value="runConfig:Aspire Host.AppHost: https" />
           </ExecutableSnapshot>
         </option>
       </ExecutableRowSnapshot>

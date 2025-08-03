@@ -15,6 +15,13 @@ To get started with the course, follow these steps:
 3. Open the solution file in Visual Studio or your preferred IDE.
 4. Follow the instructions in each module to complete the exercises and examples.
 
+
+## Dotnet Migrations:
+To create migrations to the database, you can use the following command:
+```bash
+dotnet ef migrations add --project Entities/Entities.csproj --startup-project Api/Api.csproj --context Entities.PodcastDbContext --configuration Debug InitialCreate --output-dir Migrations
+```
+
 ## Docker Container
 To run the course examples in a Docker container, you can use the provided Dockerfile. Follow these steps:
 ```bash

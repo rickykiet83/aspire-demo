@@ -1,14 +1,27 @@
+using Projects;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
-var api = builder.AddProject<Projects.Api>("api")
-    .WithReplicas(3) // API project with 3 replicas
-    .WithExplicitStart() // API project will not start automatically
-    ; 
+var password = builder.AddParameter("password", secret: true);
 
-builder.AddProject<Projects.Frontend>("frontend")
-    .WithReference(api) // frontend dependent the API project
+var server = builder.AddSqlServer("server", password, 1433)
+    .WithLifetime(ContainerLifetime.Persistent);
+
+var db = server
+    .AddDatabase("podcasts");
+
+var api = builder.AddProject<Api>("api")
+    .WithReference(db)
+    .WaitFor(db);
+
+builder.AddProject<Frontend>("frontend")
+    .WithReference(api)
     .WaitFor(api)
-    .WithExternalHttpEndpoints()
-    ;
+    .WithExternalHttpEndpoints();
+
+builder.AddProject<MigrationService>("migration")
+    .WithReference(db)
+    .WaitFor(db)
+    .WithParentRelationship(server);
 
 builder.Build().Run();
