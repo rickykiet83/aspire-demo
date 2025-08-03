@@ -14,13 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f338114-000b-45f5-af91-8a509824334a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.run/AppHost_ https.run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Frontend.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/wait-and-run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Database/wait-and-run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Podcasts.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Podcasts.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +53,32 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Api: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Api: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Frontend: https.executor&quot;: &quot;Debug&quot;,
-    &quot;Aspire Host.AppHost: https.executor&quot;: &quot;Debug&quot;,
-    &quot;Docker.docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Api: http.executor": "Debug",
+    ".NET Launch Settings Profile.Api: https.executor": "Debug",
+    ".NET Launch Settings Profile.Frontend: https.executor": "Debug",
+    "Aspire Host.AppHost: https.executor": "Debug",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/Users/kietpham/Library/Application Support/JetBrains/Rider2025.1/plugins/Shell Script/shellcheck",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Multi-Launch.Multi-Launch: Podcasts">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
@@ -117,7 +121,8 @@
       <workItem from="1749347392203" duration="36000" />
       <workItem from="1749347453480" duration="2000" />
       <workItem from="1749347463689" duration="132000" />
-      <workItem from="1749347617081" duration="295000" />
+      <workItem from="1749347617081" duration="429000" />
+      <workItem from="1754199549465" duration="966000" />
     </task>
     <servers />
   </component>

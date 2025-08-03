@@ -5,9 +5,9 @@ services:
     container_name: database
     environment:
       - ACCEPT_EULA=true
-      - MSSQL_SA_PASSWORD=Dometrain#123
+      - MSSQL_SA_PASSWORD=Password#123
     ports:
-      - 1433:1433
+      - "1433:1433"
 
   database-seed:
     depends_on: [ database ]
