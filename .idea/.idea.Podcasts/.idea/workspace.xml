@@ -15,14 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f338114-000b-45f5-af91-8a509824334a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.run/AppHost_ https.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/AppHost_ https.run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.run/Multi-Launch_ Podcasts.run.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceDefaults/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDefaults/Extensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +168,7 @@
       <workItem from="1749347463689" duration="132000" />
       <workItem from="1749347617081" duration="429000" />
       <workItem from="1754199549465" duration="7779000" />
-      <workItem from="1754207417175" duration="4993000" />
+      <workItem from="1754207417175" duration="7519000" />
     </task>
     <servers />
   </component>

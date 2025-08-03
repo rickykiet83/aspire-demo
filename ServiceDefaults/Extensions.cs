@@ -20,12 +20,26 @@ public static class Extensions
 
     public static TBuilder AddServiceDefaults<TBuilder>(this TBuilder builder) where TBuilder : IHostApplicationBuilder
     {
-        builder.ConfigureOpenTelemetry();
+        builder.ConfigureOpenTelemetry(); // Configures OpenTelemetry for the application, including metrics and tracing.
 
-        builder.AddDefaultHealthChecks();
+        builder.AddDefaultHealthChecks(); // Adds a default health check that checks if the application is responsive.
 
-        builder.Services.AddServiceDiscovery();
+        builder.Services.AddServiceDiscovery(); // Adds service discovery support to the application.
 
+        // Configure resilience and service discovery for HTTP clients by default.
+        // This allows HTTP clients to automatically retry requests, handle transient faults, and discover services.
+        // You can customize these settings further in your application configuration.
+        // For example, you can configure the retry policy, circuit breaker, and other resilience strategies.
+        // See https://aka.ms/dotnet/aspire/resilience for more details.
+        // See https://aka.ms/dotnet/aspire/service-discovery for more details
+        // on service discovery configuration.
+        // Note: This configuration applies to all HTTP clients created by the application.
+        // If you want to configure specific HTTP clients differently, you can do so by using the
+        // `AddHttpClient` method with custom configurations.
+        // For example:
+        // builder.Services.AddHttpClient("myClient")
+        //     .ConfigureHttpClient(client =>
+        //     {    
         builder.Services.ConfigureHttpClientDefaults(http =>
         {
             // Turn on resilience by default
