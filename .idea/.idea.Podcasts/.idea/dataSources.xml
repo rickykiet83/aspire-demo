@@ -55,5 +55,12 @@
       <jdbc-url>Server=127.0.0.1,53796;User ID=sa;Password=Password#123;TrustServerCertificate=true;Initial Catalog=podcasts</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="cache" uuid="44b6a585-200a-4c87-b8cc-812a05345216">
+      <driver-ref>redis</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>jdbc.RedisDriver</jdbc-driver>
+      <jdbc-url>jdbc:redis://V9qRY5SNHyRYWt46teV5Sp@localhost:55343</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

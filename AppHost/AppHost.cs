@@ -2,20 +2,6 @@ using Projects;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-///////////////////////////
-// Some extra integrations, just for fun...
-
-var redis = builder.AddRedis("cache")
-    .WithRedisCommander();
-
-var rabbitmq = builder.AddRabbitMQ("rabbitmq")
-    .WithManagementPlugin();
-
-var mongoDb = builder.AddMongoDB("mongodb")
-    .WithMongoExpress();
-
-///////////////////////////
-
 var password = builder.AddParameter("password", secret: true);
 
 var server = builder.AddSqlServer("SQLServer", password, 1433)
@@ -24,9 +10,19 @@ var server = builder.AddSqlServer("SQLServer", password, 1433)
 var db = server
     .AddDatabase("podcasts");
 
+var cache = builder.AddRedis("cache")
+    .WithRedisCommander()
+    .WithLifetime(ContainerLifetime.Persistent);
+
+var ratingService = builder.AddProject<RatingService>("ratingservice")
+    .WithReference(cache)
+    .WaitFor(cache);
+
 var api = builder.AddProject<Api>("api")
     .WithReference(db)
-    .WaitFor(db);
+    .WithReference(ratingService)
+    .WaitFor(db)
+    .WaitFor(ratingService);
 
 builder.AddProject<Frontend>("frontend")
     .WithReference(api)
