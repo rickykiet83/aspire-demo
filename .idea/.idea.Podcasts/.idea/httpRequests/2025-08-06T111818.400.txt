@@ -1,0 +1,12 @@
+Microsoft.AspNetCore.Http.BadHttpRequestException: Required parameter "string podcastName" was not provided from query string.
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.RequiredParameterNotProvided(HttpContext httpContext, String parameterTypeName, String parameterName, String source, Boolean shouldThrow)
+   at lambda_method2(Closure, Object, HttpContext)
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+HEADERS
+=======
+Accept: */*
+Host: localhost:7093
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip

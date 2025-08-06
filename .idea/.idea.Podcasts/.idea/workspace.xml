@@ -16,12 +16,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f338114-000b-45f5-af91-8a509824334a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Api/RatingServiceHttpClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Components/RatingSuccessModal.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Components/StarRatingComponent.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RatingService/http-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RatingService/rating.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podcasts.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Podcasts.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/BackendHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/BackendHttpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Components/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Components/Routes.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Components/Routes.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Components/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Components/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Frontend.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/wwwroot/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podcasts.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Podcasts.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RatingService/RatingStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RatingService/RatingStore.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +44,30 @@
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="HTTP Public Environment File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/363c1765261146f1a68840a2d3ce7e39291438/94/e2da248c/ExecutionStrategyExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85d89276bc274c6ab0696de255dabacef83200/7d/a2526877/Task.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85d89276bc274c6ab0696de255dabacef83200/aa/a85f1357/AsyncTaskMethodBuilder`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3f8ce2ef4b154b518b3e5f2bc9822e3be1a00/2b/8879e45d/EventCallback`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85d89276bc274c6ab0696de255dabacef83200/ec/1693546e/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ce4b29a828792eb9a714f13dc06413f31e473999dea7bb4b1116c5fc0b3b3/ServiceDiscoveryServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9878848e0e2d270c4f8449fcdb4c319e12f969e6aaffb82ff3db4bebb8fb/ConnectionStringValidation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e028ffa63841c5bb5d20f59f9898c1e292ac1f3c9e8e486cc1136262124d/AspireSqlServerEFCoreSqlClientExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/87e74716b2454c23b059199c6df2c6bab400/17/9de64f3c/IModalService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/87e74716b2454c23b059199c6df2c6bab400/80/f5dcfad5/CascadingBlazoredModal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/940ec29876eb4103bc3b7f51eaa50f38f800/5d/2464d135/TracerProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93b441a9e8201c5bdfa1b1fdc8061a77b86ccbb8566d7bae85036aba8c618f7/IDatabaseAsync.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fd5f2a75d480e8c786b15cfa0ac11aa9bf445a667ad13d25dc9db61f2cb1b/IConnectionMultiplexer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Resources/getting-started-dotnet-aspire/Module 03 - Adding Aspire/Section 01 - Without Aspire/Frontend/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///usr/local/share/dotnet/sdk/9.0.300/Sdks/Microsoft.NET.Sdk.StaticWebAssets/targets/Microsoft.NET.Sdk.StaticWebAssets.Compression.targets" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$PROJECT_DIR$/RatingService/rating.http" environment="dev" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -53,6 +77,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2yAzdo6xrdiSJ5FyslMbF1xogQU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -61,35 +88,40 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Api: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Api: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Frontend: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.MigrationService.executor&quot;: &quot;Debug&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Aspire Host.AppHost: https.executor&quot;: &quot;Debug&quot;,
-    &quot;Docker.docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;/Users/kietpham/Library/Application Support/JetBrains/Rider2025.1/plugins/Shell Script/shellcheck&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Api: http.executor": "Debug",
+    ".NET Launch Settings Profile.Api: https.executor": "Debug",
+    ".NET Launch Settings Profile.Frontend: https.executor": "Debug",
+    ".NET Project.MigrationService.executor": "Debug",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Aspire Host.AppHost: https.executor": "Debug",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "HTTP Request.rating | Create Rating for a Podcast.executor": "Run",
+    "HTTP Request.rating | GET request to example server.executor": "Run",
+    "HTTP Request.rating | Get Ratings for a Podcast.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHELLCHECK.PATH": "/Users/kietpham/Library/Application Support/JetBrains/Rider2025.1/plugins/Shell Script/shellcheck",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "nx.console.mcp.server.install.notification.hide": "true",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Markdown&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Aspire Host.AppHost: https">
     <configuration name="MigrationService" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -113,6 +145,15 @@
       <method v="2">
         <option name="Build" />
       </method>
+    </configuration>
+    <configuration name="rating | Create Rating for a Podcast" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RatingService/rating.http" executionIdentifier="Create Rating for a Podcast" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rating | GET request to example server" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RatingService/rating.http" executionIdentifier="GET request to example server" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rating | Get Ratings for a Podcast" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/RatingService/rating.http" executionIdentifier="Get Ratings for a Podcast" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="MigrationService" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MigrationService/MigrationService.csproj" />
@@ -168,9 +209,15 @@
       <item itemvalue=".NET Project.MigrationService" />
       <item itemvalue="Aspire Host.AppHost: https" />
       <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="HTTP Request.rating | Create Rating for a Podcast" />
+      <item itemvalue="HTTP Request.rating | GET request to example server" />
+      <item itemvalue="HTTP Request.rating | Get Ratings for a Podcast" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rating | Create Rating for a Podcast" />
+        <item itemvalue="HTTP Request.rating | Get Ratings for a Podcast" />
+        <item itemvalue="HTTP Request.rating | GET request to example server" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -191,6 +238,8 @@
       <workItem from="1754199549465" duration="7779000" />
       <workItem from="1754207417175" duration="8517000" />
       <workItem from="1754377653243" duration="166000" />
+      <workItem from="1754441139897" duration="2697000" />
+      <workItem from="1754445332366" duration="1902000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,4 @@
+using Blazored.Modal;
 using Frontend;
 using Frontend.Components;
 
@@ -8,6 +9,8 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.AddServiceDefaults();
+
+builder.Services.AddBlazoredModal();
 
 // builder.Services.AddHttpClient<BackendHttpClient>(x => x.BaseAddress = new Uri("https+http://api"));
 var apiBaseAddress = builder.Configuration.GetValue<string>("ApiBaseAddress");

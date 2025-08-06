@@ -1,0 +1,18 @@
+### GET request ratings for a podcast
+# @name Get Ratings for a Podcast
+# @query podcastName The name of the podcast to retrieve ratings for
+# @response 200 OK Returns the ratings for the specified podcast
+GET {{baseUrl}}/ratings?podcastName={{podcastName}}
+
+###
+
+### Create a new rating for a podcast
+# @name Create Rating for a Podcast
+# @body podcastName The name of the podcast to rate
+POST {{baseUrl}}/ratings
+Content-Type: application/json
+
+{
+    "podcastName": "{{podcastName}}",
+    "rating": {{rating}}
+}

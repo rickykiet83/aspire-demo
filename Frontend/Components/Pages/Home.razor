@@ -1,5 +1,7 @@
 ﻿@page "/"
+@using Blazored.Modal.Services
 @inject BackendHttpClient HttpClient
+@* @inject IJSRuntime JS *@
 
 <PageTitle>Home</PageTitle>
 
@@ -15,22 +17,76 @@
                 <h5 class="mb-0">Podcast List</h5>
             </div>
             <div class="card-body">
-                <ul class="list-group">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Podcast Name</th>
+                        <th>Rating</th>
+                    </tr>
+                    </thead>
+                    <tbody>
                     @foreach (var podcast in _podcasts)
                     {
-                        <li class="list-group-item">@podcast</li>
+                        <tr>
+                            <td>@podcast.PodcastName</td>
+                            <td>
+                                <!-- Clicking on a star will both set the rating
+                                         and automatically "submit" it (for now, just show an alert). -->
+                                <StarRatingComponent Value="@podcast.Rating"
+                                                     OnRatingSelected="@((int newRating) => SubmitRating(podcast, newRating))" />
+                            </td>
+                        </tr>
                     }
-                </ul>
+                    </tbody>
+                </table>
             </div>
         </div>
     }
 </div>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">My Modal Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p>This is a modal body.</p>
+                <p>You can include Razor code here if needed.</p>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 @code {
-    private List<string>? _podcasts;
+    private List<Podcast>? _podcasts;
+    [CascadingParameter] public IModalService Modal { get; set; } = null!;
 
     private async Task GetPodcasts()
     {
         _podcasts = await HttpClient.GetPodcasts();
+    }
+
+    private async Task SubmitRating(Podcast podcast, int newRating)
+    {
+        podcast.Rating = newRating;
+        await HttpClient.SubmitRating(podcast.PodcastName, newRating);
+
+        Modal.Show<RatingSuccessModal>("Success!");
     }
 }

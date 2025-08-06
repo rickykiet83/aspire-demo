@@ -7,6 +7,7 @@ public class RatingStore(IConnectionMultiplexer connection)
     public void AddRating(string name, int rating)
     {
         var db = connection.GetDatabase();
+        // Use ListRightPushAsync to add the rating to the end of the list
         db.ListRightPushAsync(name, rating);
     }
 

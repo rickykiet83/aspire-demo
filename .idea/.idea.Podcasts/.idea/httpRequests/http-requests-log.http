@@ -1,0 +1,66 @@
+POST https://localhost:7093/ratings
+Content-Type: application/json
+Content-Length: 66
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+    "podcastName": "Developer Weekly Podcast",
+    "rating": 5
+}
+
+###
+
+GET https://localhost:7093/ratings?podcastName=value
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-06T112112.200.json
+
+###
+
+POST https://localhost:7093/ratings
+Content-Type: application/json
+Content-Length: 47
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+    "podcastName": "value",
+    "rating": 5
+}
+
+###
+
+GET https://localhost:7093/ratings?podcastName=value
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-06T111946.200.json
+
+###
+
+GET https://localhost:7093/ratings?podcastName=value
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-06T111904.200.json
+
+###
+
+GET https://localhost:7093/ratings
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-08-06T111818.400.txt
+
+###
+
