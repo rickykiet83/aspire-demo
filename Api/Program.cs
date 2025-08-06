@@ -1,3 +1,4 @@
+using System.Diagnostics.Metrics;
 using Api;
 using Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -41,9 +42,14 @@ app.MapGet("/podcasts", async (PodcastDbContext db, RatingServiceHttpClient rati
     return withRatings;
 });
 
+var demoMeter = new Meter("AspireCourse", "1.0");
+var ratingsSubmittedCounter = demoMeter.CreateCounter<int>("ratings_submitted");
+
 app.MapPost("/rating", async (RatingServiceHttpClient ratingServiceHttpClient, [FromBody] PodcastApiModel podcast) =>
 {
     await ratingServiceHttpClient.SubmitRating(podcast.PodcastName, podcast.Rating);
+    
+    ratingsSubmittedCounter.Add(1);
 });
 
 app.MapDefaultEndpoints();

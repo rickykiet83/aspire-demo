@@ -16,25 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f338114-000b-45f5-af91-8a509824334a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/RatingServiceHttpClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Components/RatingSuccessModal.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Components/StarRatingComponent.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RatingService/http-client.env.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RatingService/rating.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Podcasts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/BackendHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/BackendHttpClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Components/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Components/Routes.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Components/Routes.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Components/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Components/_Imports.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Frontend.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/wwwroot/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podcasts.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Podcasts.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RatingService/RatingStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RatingService/RatingStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceDefaults/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDefaults/Extensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +223,7 @@
       <workItem from="1754207417175" duration="8517000" />
       <workItem from="1754377653243" duration="166000" />
       <workItem from="1754441139897" duration="2697000" />
-      <workItem from="1754445332366" duration="1902000" />
+      <workItem from="1754445332366" duration="3903000" />
     </task>
     <servers />
   </component>
@@ -276,6 +260,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Api/Program.cs</url>
+          <line>51</line>
+          <properties documentPath="$PROJECT_DIR$/Api/Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="1526" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1557" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

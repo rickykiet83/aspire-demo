@@ -63,16 +63,26 @@ public static class Extensions
     {
         builder.Logging.AddOpenTelemetry(logging =>
         {
-            logging.IncludeFormattedMessage = true;
+            // Include formatted messages in logs
+            logging.IncludeFormattedMessage = true; 
+            // Include scopes in logs to provide context for log messages
+            // This is useful for structured logging and helps in understanding the flow of the application.
+            // Scopes can be used to group related log messages together, making it easier to trace
+            // the execution path of the application.
+            // For example, if you have a request scope, all log messages within that scope will
+            // be associated with that request, providing better context for debugging and analysis.
+            // Scopes can also be nested, allowing for hierarchical logging structures.
             logging.IncludeScopes = true;
         });
 
         builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
             {
-                metrics.AddAspNetCoreInstrumentation()
-                    .AddHttpClientInstrumentation()
-                    .AddRuntimeInstrumentation();
+                metrics.AddAspNetCoreInstrumentation() // Collects metrics for ASP.NET Core applications, such as request rates, response times, and error rates
+                    .AddHttpClientInstrumentation() // Collects metrics for HTTP requests made by the application
+                    .AddRuntimeInstrumentation() // Collects runtime metrics such as CPU usage, memory usage, and garbage collection statistics
+                    .AddMeter("AspireCourse") // Use a consistent meter name across your application for metrics collection
+                    ;
             })
             .WithTracing(tracing =>
             {
